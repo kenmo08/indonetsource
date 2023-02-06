@@ -14,7 +14,6 @@
     </style>
 </head>
 <body>
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <table>
         <thead>
             <div class="btn-group" role="group" aria-label="Basic example">
@@ -22,6 +21,7 @@
             <a class="btn btn-outline-dark" href="index.php" role="button">home</a>
             </div>
             <tr>
+            <table class="table table-dark table-striped">
                 <td>No</td>
                 <td>device code</td>
                 <td>date</td>
@@ -49,8 +49,10 @@
                 <td><?php echo $data['time_maintenance'] ?></td>
                 <td><?php echo $data['status'] ?></td>
                 <td>
-                    <a href="update.php?id_device=<?php echo $data['id_device']; ?>">Update</a> |
-                    <a href="delete.php?id_device=<?php echo $data['id_device']; ?>">Delete</a>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a class="btn btn-outline-light" href="update.php?id_device=<?php echo $data['id_device']; ?>">Update</a>
+                    <a class="btn btn-outline-light" href="delete.php?id_device=<?php echo $data['id_device']; ?>">Delete</a>
+                </div>
                 </td>
             </tr>
         <?php } ?>
