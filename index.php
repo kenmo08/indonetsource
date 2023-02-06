@@ -26,11 +26,11 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="index.php?page=berita" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Data Siswa
+                  Data device
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="index.php?page=input">Input Data barang</a></li>
-                  <li><a class="dropdown-item" href="index.php?page=view">View Data barang</a></li>
+                  <li><a class="dropdown-item" href="index.php?page=input">Input Data device</a></li>
+                  <li><a class="dropdown-item" href="index.php?page=view">View Data device</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">???</a></li>
                 </ul>
