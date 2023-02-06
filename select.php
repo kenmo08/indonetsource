@@ -18,9 +18,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <table>
         <thead>
-            <a style="button" href="index.php?page=input">Insert</a>
-            <a>/</a>
-            <a href="index.php">home</a>
+            <a class="btn btn-primary" href="index.php?page=input" role="button">insert</a>
+            <a class="btn btn-primary" href="index.php" role="button">home</a>
             <tr>
                 <td>No</td>
                 <td>device code</td>
