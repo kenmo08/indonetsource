@@ -14,7 +14,6 @@
     </style>
 </head>
 <body>
-    <h2>PHP MySQL Update dan Delete</h2>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <table>
         <thead>
