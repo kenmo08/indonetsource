@@ -63,12 +63,6 @@
                         case 'input':
                         include "insert.php";
                         break;
-                            case 'update':
-                            include "update.php";
-                            break;
-                                case 'delete':
-                                include "delete.php";
-                                break;
 
 								}
 				}else{
