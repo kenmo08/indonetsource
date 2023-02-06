@@ -17,10 +17,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <table>
         <thead>
-        <div class="btn-group" role="group" aria-label="Basic example">
+            <div class="btn-group" role="group" aria-label="Basic example">
             <a class="btn btn-outline-dark" href="index.php?page=input" role="button">insert</a>
             <a class="btn btn-outline-dark" href="index.php" role="button">home</a>
-    </div>
+            </div>
             <tr>
                 <td>No</td>
                 <td>device code</td>
