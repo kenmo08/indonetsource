@@ -12,7 +12,6 @@
     }
 </style>
 <body>
-    <h2>PHP MySQL Query Update</h2>
     <form action="proses_update.php" method="post">
         <?php
         $id_device = $_GET['id_device'];
