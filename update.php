@@ -52,7 +52,8 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" name="Simpan"></td>
+                    <td><input type="submit" name="Simpan">
+                    <button onclick="history.back()">Go Back</button></td>
                 </tr>
             </table>
         <?php } ?>
