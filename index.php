@@ -32,7 +32,7 @@
                   <li><a class="dropdown-item" href="index.php?page=input">Input Data device</a></li>
                   <li><a class="dropdown-item" href="index.php?page=view">View Data device</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">???</a></li>
+                  <li><a class="dropdown-item" href="index.php?page=informasi">cek informasi data</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -63,6 +63,10 @@
                         case 'input':
                         include "insert.php";
                         break;
+
+                        case 'informasi':
+                          include "cek_informasi.php";
+                          break;
 
 								}
 				}else{
