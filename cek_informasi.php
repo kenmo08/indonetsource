@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<form action="index.php?page=informasi" method="post">
+
 	<div class="container">
 		<h1>GeeksForGeeks</h1>
 		<div class="row">
@@ -36,7 +36,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>City:</label>
+					<label>device_code:</label>
 					<input type="text" name="device_code"
 						id="device_code" class="form-control"
 						placeholder=''
@@ -47,7 +47,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>City:</label>
+					<label>date:</label>
 					<input type="text" name="date"
 						id="date" class="form-control"
 						placeholder=''
@@ -58,7 +58,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>City:</label>
+					<label>device_name:</label>
 					<input type="text" name="device_name"
 						id="device_name" class="form-control"
 						placeholder=''
@@ -69,7 +69,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>City:</label>
+					<label>lokasi:</label>
 					<input type="text" name="lokasi"
 						id="lokasi" class="form-control"
 						placeholder=''
@@ -80,7 +80,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>City:</label>
+					<label>maintenance_description:</label>
 					<input type="text" name="maintenance_description"
 						id="maintenance_description" class="form-control"
 						placeholder=''
@@ -91,7 +91,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>City:</label>
+					<label>time_maintenance:</label>
 					<input type="text" name="time_maintenance"
 						id="time_maintenance" class="form-control"
 						placeholder=''
@@ -102,7 +102,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>City:</label>
+					<label>status:</label>
 					<input type="text" name="status"
 						id="status" class="form-control"
 						placeholder=''
@@ -110,8 +110,7 @@
 				</div>
 			</div>
 		</div>
-		<a class="" href="update.php?id_device=<?php echo $data['id_device']; ?>">Update</a>
-</form>
+
 	</div>
 	<script>
 
