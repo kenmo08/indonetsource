@@ -21,7 +21,7 @@
 <body>
 
 	<div class="container">
-		<h1>GeeksForGeeks</h1>
+
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
