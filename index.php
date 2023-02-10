@@ -32,7 +32,7 @@
                   <li><a class="dropdown-item" href="index.php?page=input">Input Data device</a></li>
                   <li><a class="dropdown-item" href="index.php?page=view">View Data device</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="index.php?page=informasi">cek informasi data device</a></li>
+                  <li><a class="dropdown-item" href="index.php?page=informasi">cek informasi data device(on progress)</a></li>
                 </ul>
               </li>
               <li class="nav-item">

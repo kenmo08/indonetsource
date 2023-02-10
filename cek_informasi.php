@@ -25,9 +25,9 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>id_device</label>
-					<input type='text' name="id_device"
-						id='id_device' class='form-control'
+					<label>id_aset</label>
+					<input type='text' name="id_aset"
+						id='id_aset' class='form-control'
 						placeholder=''
 						onkeyup="GetDetail(this.value)" value="">
 				</div>
@@ -36,9 +36,9 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>device_code:</label>
-					<input type="text" name="device_code"
-						id="device_code" class="form-control"
+					<label>tag_aset:</label>
+					<input type="text" name="tag_aset"
+						id="tag_aset" class="form-control"
 						placeholder=''
 						value="">
 				</div>
@@ -47,9 +47,9 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>date:</label>
-					<input type="text" name="date"
-						id="date" class="form-control"
+					<label>nama_aset:</label>
+					<input type="text" name="nama_aset"
+						id="nama_aset" class="form-control"
 						placeholder=''
 						value="">
 				</div>
@@ -58,9 +58,20 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>device_name:</label>
-					<input type="text" name="device_name"
-						id="device_name" class="form-control"
+					<label>model:</label>
+					<input type="text" name="model"
+						id="model" class="form-control"
+						placeholder=''
+						value="">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="form-group">
+					<label>no_model:</label>
+					<input type="text" name="no_model"
+						id="no_model" class="form-control"
 						placeholder=''
 						value="">
 				</div>
@@ -80,9 +91,9 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>maintenance_description:</label>
-					<input type="text" name="maintenance_description"
-						id="maintenance_description" class="form-control"
+					<label>diberikan_kepada:</label>
+					<input type="text" name="diberikan_kepada"
+						id="diberikan_kepada" class="form-control"
 						placeholder=''
 						value="">
 				</div>
@@ -91,20 +102,9 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>time_maintenance:</label>
-					<input type="text" name="time_maintenance"
-						id="time_maintenance" class="form-control"
-						placeholder=''
-						value="">
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="form-group">
-					<label>status:</label>
-					<input type="text" name="status"
-						id="status" class="form-control"
+					<label>kategori:</label>
+					<input type="text" name="kategori"
+						id="kategori" class="form-control"
 						placeholder=''
 						value="">
 				</div>
@@ -119,13 +119,13 @@
 		// assigned to this event
 		function GetDetail(str) {
 			if (str.length == 0) {
-				document.getElementById("device_code").value = "";
-				document.getElementById("date").value = "";
-				document.getElementById("device_name").value = "";
+				document.getElementById("tag_aset").value = "";
+				document.getElementById("nama_aset").value = "";
+				document.getElementById("model").value = "";
+				document.getElementById("no_model").value = "";
 				document.getElementById("lokasi").value = "";
-				document.getElementById("maintenance_description").value = "";
-				document.getElementById("time_maintenance").value = "";
-				document.getElementById("status").value = "";
+				document.getElementById("diberikan_kepada").value = "";
+				document.getElementById("kategori").value = "";
 				return;
 			}
 			else {
@@ -137,7 +137,7 @@
 					// Defines a function to be called when
 					// the readyState property changes
 					if (this.readyState == 4 &&
-							this.status == 200) {
+							this.kategori == 200) {
 						
 						// Typical action to be performed
 						// when the document is ready
@@ -148,25 +148,25 @@
 						// a variable assign the value
 						// received to first name input field
 						document.getElementById
-                        ("device_code").value = myObj[0];
+                        ("tag_aset").value = myObj[0];
 						document.getElementById
-                        ("date").value = myObj[1];
+                        ("nama_aset").value = myObj[1];
 						document.getElementById
-                        ("device_name").value = myObj[2];
+                        ("model").value = myObj[2];
 						document.getElementById
-                        ("lokasi").value = myObj[3];
+                        ("no_model").value = myObj[3];
 						document.getElementById
-                        ("maintenance_description").value = myObj[4];
+                        ("lokasi").value = myObj[4];
 						document.getElementById
-                        ("time_maintenance").value = myObj[5];
+                        ("diberikan_kepada").value = myObj[5];
 						document.getElementById
-                        ("status").value = myObj[6];
+                        ("kategori").value = myObj[6];
 					}
 					
 				};
 				
 				// xhttp.open("GET", "filename", true);
-				xmlhttp.open("GET", "gfg.php?id_device=" + str, true);
+				xmlhttp.open("GET", "gfg.php?id_aset=" + str, true);
 				
 				// Sends the request to the server
 				xmlhttp.send();

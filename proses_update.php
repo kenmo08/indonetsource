@@ -1,16 +1,16 @@
 <?php
 include 'koneksi.php';
-$id_device                    = $_POST['id_device'];
-$device_code                  = $_POST['device_code'];
-$date                         = $_POST['date'];
-$device_name                  = $_POST['device_name'];
-$lokasi                       = $_POST['lokasi'];
-$maintenance_description      = $_POST['maintenance_description'];
-$time_maintenance             = $_POST['time_maintenance'];
-$status                       = $_POST['status'];
-echo $id_device,$device_code,$date,$device_name,$lokasi,$maintenance_description,$time_maintenance,$status;
-mysqli_query($kon, "UPDATE list SET device_code='$device_code',date='$date',device_name='$device_name',
-lokasi='$lokasi',maintenance_description='$maintenance_description',time_maintenance='$time_maintenance',
-status='$status' WHERE id_device = $id_device");
+$id_aset                        = $_POST['id_aset'];
+$nama_aset                      = $_POST['nama_aset'];
+$tag_aset                       = $_POST['tag_aset'];
+$model                          = $_POST['model'];
+$no_model                       = $_POST['no_model'];
+$kategori                       = $_POST['kategori'];
+$diberikan_kepada               = $_POST['diberikan_kepada'];
+$lokasi                         = $_POST['lokasi'];
+echo $id_aset,$nama_aset,$tag_aset,$model,$no_model,$kategori,$diberikan_kepada,$lokasi;
+mysqli_query($kon, "UPDATE list SET nama_aset='$nama_aset',tag_aset='$tag_aset',model='$model',
+no_model='$no_model',kategori='$kategori',diberikan_kepada='$diberikan_kepada',
+lokasi='$lokasi' WHERE id_aset = $id_aset");
 header("location:index.php?page=view");
 ?>

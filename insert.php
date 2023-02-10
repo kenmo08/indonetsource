@@ -2,15 +2,15 @@
  
         include "koneksi.php";
         //if ($_SERVER["REQUEST_METHOD"] == "post"){<form action="<?php echo $_SERVER["PHP_SELF"];" method="post">
-        if (isset($_POST['submit'])) {                  
-                $device_code=$_POST["device_code"];
-                $date=$_POST["date"];
+        if (isset($_POST['submit'])) {               
+                $nama_aset=$_POST["nama_aset"];   
+                $tag_aset=$_POST["tag_aset"];
+                $model=$_POST["model"];
+                $no_model=$_POST["no_model"];
+                $kategori=$_POST["kategori"];
+                $diberikan_kepada=$_POST["diberikan_kepada"];
                 $lokasi=$_POST["lokasi"];
-                $device_name=$_POST["device_name"];
-                $maintenance_description=$_POST["maintenance_description"];
-                $time_maintenance=$_POST["time_maintenance"];
-                $status=$_POST["status"];
-                $sql="INSERT INTO list VALUES ('','$device_code','$date','$lokasi','$device_name','$maintenance_description','$time_maintenance','$status')";
+                $sql="INSERT INTO list VALUES ('','$tag_aset','$nama_aset','$model','$no_model','$lokasi','$diberikan_kepada','$kategori')";
 
 
                 $hasil=mysqli_query($kon,$sql);
@@ -42,33 +42,33 @@
     <form action="index.php?page=input" method="post">
     <input type="hidden" name="---" class="form-control" placeholder="Masukan ID Barang">
 
-<div class="form-group">
-        <label>device_code:</label>
-        <input type="text" name="device_code" class="form-control">
+    <div class="form-group">
+        <label>nama_aset:</label>
+        <input type="text" name="nama_aset" class="form-control">
 </div>
 <div class="form-group">
-        <label>date:</label>
-        <input type="text" name="date" class="form-control">
+        <label>tag_aset:</label>
+        <input type="text" name="tag_aset" class="form-control">
+</div>
+<div class="form-group">
+        <label>model</label>
+        <input type="text" name="model" class="form-control">
+</div>
+<div class="form-group">
+        <label>no_model</label>
+        <input type="text" name="no_model" class="form-control">
+</div>
+<div class="form-group">
+        <label>kategori</label>
+        <input type="text" name="kategori" class="form-control">
+</div>
+<div class="form-group">
+        <label>diberikan_kepada</label>
+        <input type="text" name="diberikan_kepada" class="form-control">
 </div>
 <div class="form-group">
         <label>lokasi</label>
         <input type="text" name="lokasi" class="form-control">
-</div>
-<div class="form-group">
-        <label>device_name</label>
-        <input type="text" name="device_name" class="form-control">
-</div>
-<div class="form-group">
-        <label>maintenance_description</label>
-        <input type="text" name="maintenance_description" class="form-control">
-</div>
-<div class="form-group">
-        <label>time_maintenance</label>
-        <input type="text" name="time_maintenance" class="form-control">
-</div>
-<div class="form-group">
-        <label>status</label>
-        <input type="text" name="status" class="form-control">
 </div>
 <button type="submit" name="submit" class="btn btn-primary">submit</button>
         </form>

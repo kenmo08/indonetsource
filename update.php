@@ -14,40 +14,40 @@
 <body>
     <form action="proses_update.php" method="post">
         <?php
-        $id_device = $_GET['id_device'];
+        $id_aset = $_GET['id_aset'];
         include "koneksi.php";        
-        $query = mysqli_query($kon, "SELECT * FROM list where id_device = $id_device");
+        $query = mysqli_query($kon, "SELECT * FROM list where id_aset = $id_aset");
         while ($data = mysqli_fetch_array($query)) {
         ?>
             <table>
-                <input type="hidden" name="id_device" value="<?php echo $data['id_device']; ?>">
+                <input type="hidden" name="id_aset" value="<?php echo $data['id_aset']; ?>">
                 <tr>
-                    <td>device code</td>
-                    <td><input type=" text" name="device_code" value="<?php echo $data['device_code']; ?>"></td>
+                    <td>tag aset</td>
+                    <td><input type=" text" name="tag_aset" value="<?php echo $data['tag_aset']; ?>"></td>
                 </tr>
                 <tr>
-                    <td>date</td>
-                    <td><input type=" text" name="date" value="<?php echo $data['date']; ?>"></td>
+                    <td>nama_aset</td>
+                    <td><input type=" text" name="nama_aset" value="<?php echo $data['nama_aset']; ?>"></td>
                 </tr>
                 <tr>
-                    <td>device name</td>
-                    <td><input type=" text" name="device_name" value="<?php echo $data['device_name']; ?>"></td>
+                    <td>model</td>
+                    <td><input type=" text" name="model" value="<?php echo $data['model']; ?>"></td>
+                </tr>
+                <tr>
+                    <td>no_model</td>
+                    <td><input type=" text" name="no_model" value="<?php echo $data['no_model']; ?>"></td>
                 </tr>
                 <tr>
                     <td>lokasi</td>
                     <td><input type=" text" name="lokasi" value="<?php echo $data['lokasi']; ?>"></td>
                 </tr>
                 <tr>
-                    <td>maintenance description</td>
-                    <td><input type=" text" name="maintenance_description" value="<?php echo $data['maintenance_description']; ?>"></td>
+                    <td>diberikan kepada</td>
+                    <td><input type=" text" name="diberikan_kepada" value="<?php echo $data['diberikan_kepada']; ?>"></td>
                 </tr>
                 <tr>
-                    <td>time maintenance</td>
-                    <td><input type=" text" name="time_maintenance" value="<?php echo $data['time_maintenance']; ?>"></td>
-                </tr>
-                <tr>
-                    <td>status</td>
-                    <td><input type=" text" name="status" value="<?php echo $data['status']; ?>"></td>
+                    <td>kategori</td>
+                    <td><input type=" text" name="kategori" value="<?php echo $data['kategori']; ?>"></td>
                 </tr>
                 <tr>
                     <td></td>

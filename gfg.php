@@ -1,31 +1,31 @@
 <?php
 
 // Get the user id
-$id_device = $_REQUEST['id_device'];
+$id_aset = $_REQUEST['id_aset'];
 
 // Database connection
 $kon = mysqli_connect("localhost", "root", "", "maintenance");
 
-if ($id_device !== "") {
+if ($id_aset !== "") {
 	
 	// Get corresponding first name and
 	// last name for that user id	
-	$query = mysqli_query($kon, "SELECT device_code,
-	date, device_name, lokasi, maintenance_description, time_maintenance, status FROM list WHERE id_device='$id_device'");
+	$query = mysqli_query($kon, "SELECT tag_aset,
+	nama_aset, model, no_model, lokasi, diberikan_kepada FROM list WHERE id_aset='$id_aset'");
 
 	$row = mysqli_fetch_array($query);
 
-	$device_code = $row["device_code"];
-	$date = $row["date"];
-	$device_name = $row["device_name"];
+	$tag_aset = $row["tag_aset"];
+	$nama_aset = $row["nama_aset"];
+	$model = $row["model"];
+	$no_model = $row["no_model"];
 	$lokasi = $row["lokasi"];
-	$maintenance_description = $row["maintenance_description"];
-	$time_maintenance = $row["time_maintenance"];
-	$status = $row["status"];
+	$diberikan_kepada = $row["diberikan_kepada"];
+	$kategori = $row["kategori"];
 }
 
 // Store it in a array
-$result = array("$device_code", "$date", "$device_name", "$lokasi", "$maintenance_description", "$time_maintenance", "$status" );
+$result = array("$tag_aset", "$nama_aset", "$model", "$no_model", "$lokasi", "$diberikan_kepada", "kategori" );
 
 // Send in JSON encoded form
 $myJSON = json_encode($result);
