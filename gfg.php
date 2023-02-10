@@ -10,22 +10,22 @@ if ($id_aset !== "") {
 	
 	// Get corresponding first name and
 	// last name for that user id	
-	$query = mysqli_query($kon, "SELECT tag_aset,
-	nama_aset, model, no_model, lokasi, diberikan_kepada FROM list WHERE id_aset ='$id_aset'");
+	$query = mysqli_query($kon, "SELECT nama_aset,
+	tag_aset, model, no_model, kategori, diberikan_kepada, lokasi FROM list WHERE id_aset ='$id_aset'");
 
 	$row = mysqli_fetch_array($query);
 
-	$tag_aset = $row["tag_aset"];
 	$nama_aset = $row["nama_aset"];
+	$tag_aset = $row["tag_aset"];
 	$model = $row["model"];
 	$no_model = $row["no_model"];
-	$lokasi = $row["lokasi"];
-	$diberikan_kepada = $row["diberikan_kepada"];
 	$kategori = $row["kategori"];
+	$diberikan_kepada = $row["diberikan_kepada"];
+	$lokasi = $row["lokasi"];
 }
 
 // Store it in a array
-$result = array("$tag_aset", "$nama_aset", "$model", "$no_model", "$lokasi", "$diberikan_kepada", "kategori" );
+$result = array("$nama_aset", "$tag_aset", "$model", "$no_model", "$kategori", "$diberikan_kepada", "$lokasi" );
 
 // Send in JSON encoded form
 $myJSON = json_encode($result);

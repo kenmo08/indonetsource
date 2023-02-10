@@ -122,9 +122,9 @@
 				document.getElementById("nama_aset").value = "";
 				document.getElementById("model").value = "";
 				document.getElementById("no_model").value = "";
-				document.getElementById("lokasi").value = "";
-				document.getElementById("diberikan_kepada").value = "";
 				document.getElementById("kategori").value = "";
+				document.getElementById("diberikan_kepada").value = "";
+				document.getElementById("lokasi").value = "";
 				return;
 			}
 			else {
