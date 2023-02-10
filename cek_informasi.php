@@ -118,8 +118,8 @@
 		// assigned to this event
 		function GetDetail(str) {
 			if (str.length == 0) {
-				document.getElementById("tag_aset").value = "";
 				document.getElementById("nama_aset").value = "";
+				document.getElementById("tag_aset").value = "";
 				document.getElementById("model").value = "";
 				document.getElementById("no_model").value = "";
 				document.getElementById("kategori").value = "";
