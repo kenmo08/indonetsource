@@ -36,9 +36,9 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>tag_aset:</label>
-					<input type="text" name="tag_aset"
-						id="tag_aset" class="form-control"
+					<label>nama_aset:</label>
+					<input type="text" name="nama_aset"
+						id="nama_aset" class="form-control"
 						placeholder=''
 						value="">
 				</div>
@@ -47,9 +47,9 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>nama_aset:</label>
-					<input type="text" name="nama_aset"
-						id="nama_aset" class="form-control"
+					<label>tag_aset:</label>
+					<input type="text" name="tag_aset"
+						id="tag_aset" class="form-control"
 						placeholder=''
 						value="">
 				</div>
@@ -80,9 +80,9 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>lokasi:</label>
-					<input type="text" name="lokasi"
-						id="lokasi" class="form-control"
+					<label>kategori:</label>
+					<input type="text" name="kategori"
+						id="kategori" class="form-control"
 						placeholder=''
 						value="">
 				</div>
@@ -102,15 +102,14 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>kategori:</label>
-					<input type="text" name="kategori"
-						id="kategori" class="form-control"
+					<label>lokasi:</label>
+					<input type="text" name="lokasi"
+						id="lokasi" class="form-control"
 						placeholder=''
 						value="">
 				</div>
 			</div>
 		</div>
-
 	</div>
 	<script>
 
@@ -148,19 +147,21 @@
 						// a variable assign the value
 						// received to first name input field
 						document.getElementById
-                        ("tag_aset").value = myObj[0];
+                        ("nama_aset").value = myObj[0];
 						document.getElementById
-                        ("nama_aset").value = myObj[1];
+                        ("tag_aset").value = myObj[1];
 						document.getElementById
                         ("model").value = myObj[2];
 						document.getElementById
                         ("no_model").value = myObj[3];
 						document.getElementById
-                        ("lokasi").value = myObj[4];
+                        ("kategori").value = myObj[4];
 						document.getElementById
                         ("diberikan_kepada").value = myObj[5];
 						document.getElementById
-                        ("kategori").value = myObj[6];
+                        ("lokasi").value = myObj[6];
+
+
 					}
 					
 				};

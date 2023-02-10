@@ -10,7 +10,7 @@
                 $kategori=$_POST["kategori"];
                 $diberikan_kepada=$_POST["diberikan_kepada"];
                 $lokasi=$_POST["lokasi"];
-                $sql="INSERT INTO list VALUES ('','$tag_aset','$nama_aset','$model','$no_model','$lokasi','$diberikan_kepada','$kategori')";
+                $sql="INSERT INTO list VALUES ('','$nama_aset','$tag_aset','$model','$no_model','$kategori','$diberikan_kepada','$lokasi')";
 
 
                 $hasil=mysqli_query($kon,$sql);

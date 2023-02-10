@@ -11,7 +11,7 @@ if ($id_aset !== "") {
 	// Get corresponding first name and
 	// last name for that user id	
 	$query = mysqli_query($kon, "SELECT tag_aset,
-	nama_aset, model, no_model, lokasi, diberikan_kepada FROM list WHERE id_aset='$id_aset'");
+	nama_aset, model, no_model, lokasi, diberikan_kepada FROM list WHERE id_aset ='$id_aset'");
 
 	$row = mysqli_fetch_array($query);
 
