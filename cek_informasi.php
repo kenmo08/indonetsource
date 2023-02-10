@@ -25,10 +25,10 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
-					<label>User Id</label>
+					<label>id_device</label>
 					<input type='text' name="id_device"
 						id='id_device' class='form-control'
-						placeholder='Enter user id'
+						placeholder=''
 						onkeyup="GetDetail(this.value)" value="">
 				</div>
 			</div>
