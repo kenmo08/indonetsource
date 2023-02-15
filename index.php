@@ -31,8 +31,9 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="index.php?page=input">Input Data device</a></li>
                   <li><a class="dropdown-item" href="index.php?page=view">View Data device</a></li>
+                  <li><a class="dropdown-item" href="index.php?page=informasi">Search data</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="index.php?page=informasi">cek informasi data device(on progress)</a></li>
+
                   <li><a class="dropdown-item" href="index.php?page=test_view">test_view(on progress)</a></li>
                 </ul>
               </li>

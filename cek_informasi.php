@@ -10,11 +10,11 @@ $kategori                       = $_POST['kategori'];
 $diberikan_kepada               = $_POST['diberikan_kepada'];
 $lokasi                         = $_POST['lokasi'];
 echo $id_aset,$nama_aset,$tag_aset,$model,$no_model,$kategori,$diberikan_kepada,$lokasi;
-mysqli_query($kon, "UPDATE test SET nama_aset='$nama_aset',tag_aset='$tag_aset',model='$model',
+mysqli_query($kon, "UPDATE list SET nama_aset='$nama_aset',tag_aset='$tag_aset',model='$model',
 no_model='$no_model',kategori='$kategori',diberikan_kepada='$diberikan_kepada',
 lokasi='$lokasi' WHERE id_aset = $id_aset");
-header("location:index.php?page=test_view");
-$sql="UPDATE INTO test SET VALUES (nama_aset='$nama_aset',tag_aset='$tag_aset',model='$model',
+header("location:index.php?page=view");
+$sql="UPDATE INTO list SET VALUES (nama_aset='$nama_aset',tag_aset='$tag_aset',model='$model',
 no_model='$no_model',kategori='$kategori',diberikan_kepada='$diberikan_kepada',
 lokasi='$lokasi' WHERE id_aset = $id_aset)";
 
@@ -22,7 +22,7 @@ lokasi='$lokasi' WHERE id_aset = $id_aset)";
                 $hasil=mysqli_query($kon,$sql);
 
                 if ($hasil) {
-                        header("location:index.php?page=test_view");
+                        header("location:index.php?page=view");
                 }
                 else{
                         echo "<div class='alert alert-danger'> Data Gagal disimpan.</div>";
