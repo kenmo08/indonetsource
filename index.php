@@ -33,6 +33,7 @@
                   <li><a class="dropdown-item" href="index.php?page=view">View Data device</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="index.php?page=informasi">cek informasi data device(on progress)</a></li>
+                  <li><a class="dropdown-item" href="index.php?page=test_view">test_view(on progress)</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -67,6 +68,9 @@
                         case 'informasi':
                           include "cek_informasi.php";
                           break;
+                          case 'test_view':
+                            include "view.php";
+                            break;
 
 								}
 				}else{

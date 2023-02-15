@@ -1,3 +1,29 @@
+<?php
+ 
+        include "koneksi.php";
+        //if ($_SERVER["REQUEST_METHOD"] == "post"){<form action="<?php echo $_SERVER["PHP_SELF"];" method="post">
+        if (isset($_POST['submit'])) {               
+                $nama_aset=$_POST["nama_aset"];   
+                $tag_aset=$_POST["tag_aset"];
+                $model=$_POST["model"];
+                $no_model=$_POST["no_model"];
+                $kategori=$_POST["kategori"];
+                $diberikan_kepada=$_POST["diberikan_kepada"];
+                $lokasi=$_POST["lokasi"];
+                $sql="INSERT INTO test VALUES ('','$nama_aset','$tag_aset','$model','$no_model','$kategori','$diberikan_kepada','$lokasi')";
+
+
+                $hasil=mysqli_query($kon,$sql);
+
+                if ($hasil) {
+                        header("location:index.php?page=test_view");
+                }
+                else{
+                        echo "<div class='alert alert-danger'> Data Gagal disimpan.</div>";
+                }
+        }
+
+?>
 <html>
 
 <head>
@@ -22,6 +48,7 @@
 
 	<div class="container">
 
+	<form action="index.php?page=informasi" method="post">
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="form-group">
@@ -110,6 +137,8 @@
 				</div>
 			</div>
 		</div>
+		<button type="submit" name="submit" class="btn btn-primary">submit</button>
+	</form>
 	</div>
 	<script>
 
