@@ -1,4 +1,30 @@
 <?php
+ 
+        include "koneksi.php";
+        //if ($_SERVER["REQUEST_METHOD"] == "post"){<form action="<?php echo $_SERVER["PHP_SELF"];" method="post">
+        if (isset($_POST['submit'])) {               
+                $nama_aset=$_POST["nama_aset"];   
+                $tag_aset=$_POST["tag_aset"];
+                $model=$_POST["model"];
+                $no_model=$_POST["no_model"];
+                $kategori=$_POST["kategori"];
+                $diberikan_kepada=$_POST["diberikan_kepada"];
+                $lokasi=$_POST["lokasi"];
+                $sql="INSERT INTO list VALUES ('','$nama_aset','$tag_aset','$model','$no_model','$kategori','$diberikan_kepada','$lokasi')";
+
+
+                $hasil=mysqli_query($kon,$sql);
+
+                if ($hasil) {
+                        header("location:index.php?page=view");
+                }
+                else{
+                        echo "<div class='alert alert-danger'> Data Gagal disimpan.</div>";
+                }
+        }
+
+?>
+<?php
 include 'koneksi.php';
 if (isset($_POST['update'])){
 $id_aset                        = $_POST['id_aset'];
@@ -28,6 +54,14 @@ lokasi='$lokasi' WHERE id_aset = $id_aset)";
                         echo "<div class='alert alert-danger'> Data Gagal disimpan.</div>";
 						
                 }
+}
+?>
+<?php
+include 'koneksi.php';
+if (isset($_POST['delete'])){
+$id_aset    = $_POST['id_aset']; //get id yang dikirim melalui url
+mysqli_query($kon, "DELETE FROM list WHERE id_aset = $id_aset");
+header("location:index.php?page=view");
 }
 ?>
 <html>
@@ -143,7 +177,9 @@ lokasi='$lokasi' WHERE id_aset = $id_aset)";
 				</div>
 			</div>
 		</div>
+		<button type="submit" name="submit" class="btn btn-primary">submit</button>
 		<button type="update" name="update" class="btn btn-primary">update</button>
+		<button type="delete" name="delete" class="btn btn-primary">delete</button>
 		
 	</form>
 	</div>
