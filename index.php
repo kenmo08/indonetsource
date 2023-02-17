@@ -34,11 +34,11 @@
                   <li><a class="dropdown-item" href="index.php?page=informasi">Search data</a></li>
                   <li><hr class="dropdown-divider"></li>
 
-                  <li><a class="dropdown-item" href="index.php?page=test_view">test_view(on progress)</a></li>
+                  <li><a class="dropdown-item nav-link disabled" href="index.php?page=test_view">test_view(on progress)</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="https://github.com/kenmo08">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
