@@ -13,6 +13,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
+        <img src="img/cover.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
           <a class="navbar-brand" href="#">Mo-App</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
