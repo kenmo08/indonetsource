@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
@@ -28,7 +29,7 @@
                 <a class="nav-link dropdown-toggle" href="index.php?page=berita" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Data device
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu w3-container w3-center w3-animate-opacity" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="index.php?page=input">Input Data device</a></li>
                   <li><a class="dropdown-item" href="index.php?page=view">View Data device</a></li>
                   <li><a class="dropdown-item" href="index.php?page=informasi">Search data</a></li>
