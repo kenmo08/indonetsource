@@ -34,6 +34,8 @@
                   <li><a class="dropdown-item" href="index.php?page=input">Input Data device</a></li>
                   <li><a class="dropdown-item" href="index.php?page=view">View Data device</a></li>
                   <li><a class="dropdown-item" href="index.php?page=informasi">Search data</a></li>
+                  <li><a class="dropdown-item" href="index.php?page=upload">upload gambar</a></li>
+                  <li><a class="dropdown-item" href="file_upload.php">upload gambar test</a></li>
                   <li><hr class="dropdown-divider"></li>
 
                   <li><a class="dropdown-item nav-link disabled" href="index.php?page=test_view">test_view(on progress)</a></li>
@@ -76,6 +78,11 @@
                           case 'test_view':
                             include "view.php";
                             break;
+                              case 'upload2':
+                                include "upload_image.php";
+                                break;
+    
+  
 
 								}
 				}else{
