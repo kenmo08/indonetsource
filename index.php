@@ -13,7 +13,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-        <img src="img/cover.jpg" alt="Avatar Logo" style="width:60px;" class="rounded-pill">
+        <img src="img/cover.jpg" alt="Avatar Logo" style="width:60px; height: 40px;" class="rounded-pill">
           <a class="navbar-brand" href="#">Mo-App</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,6 @@
                   <li><a class="dropdown-item" href="index.php?page=view">View Data device</a></li>
                   <li><a class="dropdown-item" href="index.php?page=informasi">Search data</a></li>
                   <li><a class="dropdown-item" href="index.php?page=upload">upload gambar</a></li>
-                  <li><a class="dropdown-item" href="file_upload.php">upload gambar test</a></li>
                   <li><hr class="dropdown-divider"></li>
 
                   <li><a class="dropdown-item nav-link disabled" href="index.php?page=test_view">test_view(on progress)</a></li>
@@ -78,8 +77,8 @@
                           case 'test_view':
                             include "view.php";
                             break;
-                              case 'upload2':
-                                include "upload_image.php";
+                              case 'upload':
+                                include "file_upload.php";
                                 break;
     
   
