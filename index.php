@@ -35,6 +35,7 @@
                   <li><a class="dropdown-item" href="index.php?page=view">View Data device</a></li>
                   <li><a class="dropdown-item" href="index.php?page=informasi">Search data</a></li>
                   <li><a class="dropdown-item" href="index.php?page=upload">upload gambar</a></li>
+                  <li><a class="dropdown-item" href="index.php?page=gambar">view gambar</a></li>
                   <li><hr class="dropdown-divider"></li>
 
                   <li><a class="dropdown-item nav-link disabled" href="index.php?page=test_view">test_view(on progress)</a></li>
@@ -80,6 +81,9 @@
                               case 'upload':
                                 include "file_upload.php";
                                 break;
+                                case 'gamabar':
+                                  include "file_view.php";
+                                  break;
     
   
 
