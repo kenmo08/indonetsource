@@ -39,7 +39,6 @@ if (isset($_POST['view'])) {
             </div>
         </form>
     </div>
-    <a href="index.php">home</a>
     <div id="display-image">
         <?php
         $query = " select * from image ";

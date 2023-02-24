@@ -81,7 +81,7 @@
                               case 'upload':
                                 include "file_upload.php";
                                 break;
-                                case 'gamabar':
+                                case 'gambar':
                                   include "file_view.php";
                                   break;
     
